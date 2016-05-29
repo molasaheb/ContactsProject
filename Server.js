@@ -1,11 +1,11 @@
 var express = require("express"),
-    app = express()
-path = require('path')
-router = express.Router();
+    app = express(),
+    path = require('path'),
+    router = express.Router();
 
 app.use(express.static(path.join(__dirname, 'public')));
 router
-    .get('/', function (req, res) {
+    .get('*', function (req, res) {
         var options = {
             root: __dirname + '/public/',
             dotfiles: 'deny',
