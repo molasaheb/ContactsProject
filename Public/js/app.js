@@ -1,5 +1,11 @@
-angular.module('contactsApp',[])
+angular.module('contactsApp',['ngRoute'])
 
-.run(function($rootScope){
-   $rootScope.message = "Hello From Angular"; 
+.config(function($routeProvider, $locationProvider){
+    $routeProvider
+        .when('/contacts', {
+        controller: 'ListController',
+        templateUrl: 'views/list.html'
+    });
+    
+    $locationProvider.html5Mode(true);
 });
