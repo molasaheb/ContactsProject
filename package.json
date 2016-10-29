@@ -1,0 +1,29 @@
+{
+  "name": "Contacts-Project",
+  "version": "1.0.0",
+  "description": "Angular JS Tutorial and Node js application Part 1",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/molasaheb/ContactsProject/tree/Part1"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "client-side"
+  ],
+  "author": "Ali Shirzad <techprdblog@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molasaheb/ContactsProject/issues"
+  },
+  "homepage": "http://techprd.com",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
