@@ -1,9 +1,11 @@
 var express = require("express"),
     app = express(),
     path = require('path'),
-    router = express.Router();
+    router = express.Router(),
+    api = require('./api');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/api', api);
 router
     .get('*', function (req, res) {
         var options = {
